@@ -1,21 +1,38 @@
+import Link from "next/link";
+import classNames from "classnames";
+
 function Header({ title }) {
-  const navStyle = "hover:bg-sky-100 px-5 rounded transition-all duration-500 my-2";
+  const navStyle =
+    "hover:bg-sky-100 px-4 rounded transition-all duration-500 w-100 whitespace-nowrap";
 
   return (
-    <header className="bg-white flex w-fit h-screen mx-0 px-9 py-5 flex-col">
-      <img className="w-40 m-5 rounded p-1 border-4 border-gray-300" src="/images/profile.jpg" />
-      <div className="mt-3 mb-12">
-        <h1 className="text-7xl font-bold font-['Bebas_Neue'] tracking-wider">{title}</h1>
-        <h2 className="text-xl">Lottie Thorsen • Cosmetologist</h2>
-      </div>
-      <nav className="text-3xl w-full mt-12 leading-loose text-right">
-        <ul>
-          <li className={navStyle}>Hair</li>
-          <li className={navStyle}>Makeup</li>
-          <li className={navStyle}>About the Artist</li>
-        </ul>
+    <>
+      <header
+        className={classNames(
+          "bg-red-50 flex px-9 py-5 flex-col h-fit z-[1000] justify-left self-start"
+        )}
+      >
+        <a className="flex flex-row" href="/">
+          <img
+            className="w-[150px] h-[150px] mr-2 rounded p-2 border-4 border-pink-900/[.6]"
+            src="/images/profile.jpg"
+          />
+          <div className="mt-3 mb-12">
+            <h1 className="text-7xl font-bold font-['Bebas_Neue'] mx-3 tracking-wider">{title}</h1>
+            <h2 className="text-xl text-center">Lottie Thorsen • Cosmetologist</h2>
+          </div>
+        </a>
+      </header>
+      <nav className="text-2xl flex flex-row sticky top-0 w-screen leading-loose justify-evenly z-[1000] bg-pink-200/80 backdrop-blur">
+        <a className={navStyle}>About the Artist</a>
+        <p>•</p>
+        <a href="/hair" className={navStyle}>
+          Hair
+        </a>
+        <a className={navStyle}>Makeup</a>
+        <a className={navStyle}>SFX</a>
       </nav>
-    </header>
+    </>
   );
 }
 

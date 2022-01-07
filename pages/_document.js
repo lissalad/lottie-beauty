@@ -1,6 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 class MyDocument extends Document {
   render() {
@@ -16,16 +14,9 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="bg-red-50 h-full flex flex-col ">
-          {/* ---------- HEADER ----------- */}
-          <Header title="Prettie" />
-
-          {/* ---------- MAIN ----------- */}
+        <body className="bg-red-50 h-full w-screen flex flex-col ">
           <Main />
           <NextScript />
-
-          {/* -------- FOOTER -----------> */}
-          <Footer />
         </body>
       </Html>
     );
