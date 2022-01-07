@@ -9,12 +9,16 @@ function Header({ title }) {
     <>
       <header
         className={classNames(
-          "bg-red-50 flex px-9 py-5 flex-col h-fit z-[1000] justify-left self-start"
+          "bg-red-50 flex px-9 py-5 flex-col h-fit z-[1000] justify-left self-start",
+          "lg:"
         )}
       >
         <a className="flex flex-row" href="/">
           <img
-            className="w-[150px] h-[150px] mr-2 rounded p-2 border-4 border-pink-900/[.6]"
+            className={classNames(
+              "w-[150px] h-[150px] mr-2 rounded p-2 border-4 border-pink-900/[.6]",
+              "xs:max-w-10"
+            )}
             src="/images/profile.jpg"
           />
           <div className="mt-3 mb-12">
