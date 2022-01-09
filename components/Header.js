@@ -2,40 +2,67 @@ import Link from "next/link";
 import classNames from "classnames";
 
 function Header({ title }) {
-  const navStyle =
-    "hover:bg-sky-100 px-4 rounded transition-all duration-500 w-100 whitespace-nowrap";
+  const navStyle = "hover:bg-sky-100 px-4 rounded transition-all duration-500 whitespace-nowrap";
 
   return (
     <>
-      <header
+      <div
         className={classNames(
-          "bg-red-50 flex px-9 py-5 flex-col h-fit z-[1000] justify-left self-start",
-          "lg:"
+          "w-[100vh] bg-pink-200 relative z-[1000]",
+          "md:w-[300px] md:h-screen md:px-7 md:fixed"
         )}
       >
-        <a className="flex flex-row" href="/">
-          <img
-            className={classNames(
-              "w-[150px] h-[150px] mr-2 rounded p-2 border-4 border-pink-900/[.6]",
-              "xs:max-w-10"
-            )}
-            src="/images/profile.jpg"
-          />
-          <div className="mt-3 mb-12">
-            <h1 className="text-7xl font-bold font-['Bebas_Neue'] mx-3 tracking-wider">{title}</h1>
-            <h2 className="text-xl text-center">Lottie Thorsen • Cosmetologist</h2>
-          </div>
-        </a>
-      </header>
-      <nav className="text-2xl flex flex-row sticky top-0 w-screen leading-loose justify-evenly z-[1000] bg-pink-200/80 backdrop-blur">
-        <a className={navStyle}>About the Artist</a>
-        <p>•</p>
-        <a href="/hair" className={navStyle}>
-          Hair
-        </a>
-        <a className={navStyle}>Makeup</a>
-        <a className={navStyle}>SFX</a>
-      </nav>
+        <header
+          className={classNames(
+            "flex px-9 pt-5 flex-row h-fit z-[1000]",
+            "md:pr-0 md:bg-transparent md:px-0"
+          )}
+        >
+          <a className={classNames("flex flex-row items-left", "md:flex-col")} href="/">
+            <img
+              className={classNames(
+                "max-w-10 w-40 mr-8 rounded p-2 border-4 border-pink-900/[.6]",
+                "md:w-50 md:mr-0"
+              )}
+              src="/images/profile.jpg"
+            />
+            <div className={classNames("mt-3 mb-3 flex flex-col xs:items-center", "md:items-left")}>
+              <h1
+                className={classNames(
+                  "text-8xl font-bold font-['Bebas_Neue'] mx-5 tracking-wider",
+                  "md:mx-0 md:text-left md:text-7xl"
+                )}
+              >
+                {title}
+              </h1>
+              <h2
+                className={classNames(
+                  "text-3xl whitespace-nowrap xs:items-center",
+                  "md:text-left md:text-2xl"
+                )}
+              >
+                Lottie Thorsen • Cosmetologist
+              </h2>
+            </div>
+          </a>
+        </header>
+        <nav
+          className={classNames(
+            "text-4xl flex flex-row sticky top-0 leading-loose py-2 z-[1000] backdrop-blur justify-evenly",
+            "md:flex-col-reverse md:text-right md:bg-black/0 md:mt-12 "
+          )}
+        >
+          <a href="/abouttheartist" className={navStyle}>
+            About the Artist
+          </a>
+          <p className="md:opacity-0">•</p>
+          <a href="/hair" className={navStyle}>
+            Hair
+          </a>
+          <a className={navStyle}>Makeup</a>
+          <a className={navStyle}>SFX</a>
+        </nav>
+      </div>
     </>
   );
 }

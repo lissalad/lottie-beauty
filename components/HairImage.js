@@ -2,12 +2,12 @@ import Link from "next/link";
 import classNames from "classnames";
 
 function HairImage({ image, caption }) {
-  const imgStyle = "w-[20rem] h-auto";
+  const imgStyle = "max-w-[300px]";
   const figCapStyle =
-    "text-2xl absolute opacity-0 hover:opacity-100 absolute w-full text-center bg-lime-500/40 py-8 bottom-0";
+    "text-2xl absolute opacity-0 hover:opacity-100 absolute w-full text-center bg-lime-500/40 py-8 bottom-0 transition-all duration-200";
 
   return (
-    <div className="relative group border-4 flex justify-center m-4">
+    <div className="relative group border-4 flex justify-center m-4 xs:m-0">
       <img className={imgStyle} src={image} />
       <p className={figCapStyle} styles="background-color:blue;">
         {caption}
