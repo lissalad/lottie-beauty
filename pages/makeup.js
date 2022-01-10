@@ -2,15 +2,15 @@ import Head from "next/head";
 import Image from "next/image";
 import HairImage from "../components/HairImage";
 
-export default function Hair() {
+export default function Makeup() {
   return (
     <>
       <Head>
-        <title>Prettie • Hair</title>
+        <title>Prettie • Makeup</title>
       </Head>
 
       {/* <!-- MAIN --> */}
-      <main className="flex flex-wrap justify-center flex-row items-center  md:ml-[300px] sm:[100vh]">
+      <main className="flex flex-wrap justify-center flex-row items-center w-[100vh] md:ml-[300px] md:w-100">
         <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
         <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
         <HairImage image="/images/filler/buns.png" caption="two buns very cute" />

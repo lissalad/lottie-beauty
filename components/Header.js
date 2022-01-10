@@ -59,8 +59,12 @@ function Header({ title }) {
           <a href="/hair" className={navStyle}>
             Hair
           </a>
-          <a className={navStyle}>Makeup</a>
-          <a className={navStyle}>SFX</a>
+          <a href="/makeup" className={navStyle}>
+            Makeup
+          </a>
+          <a href="/sfx" className={navStyle}>
+            SFX
+          </a>
         </nav>
       </div>
     </>
