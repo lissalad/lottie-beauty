@@ -10,20 +10,19 @@ export default function Hair() {
       </Head>
 
       {/* <!-- MAIN --> */}
-      <main className="flex flex-wrap justify-center flex-row items-center  md:ml-[300px] sm:[100vh]">
+      <main className="flex flex-wrap justify-center flex-row items-center w-screen relative z-[50]">
         <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
         <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
         <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
         <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
         <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
         <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
-        {/* <img className={imgStyle} src="/images/filler/long.jpg" />
-        <img className={imgStyle} src="/images/filler/upbraid.jpg" />
-        <img className={imgStyle} src="/images/filler/bun.jpg" />
-        <img className={imgStyle} src="/images/filler/pony.png" />
-        <img className={imgStyle} src="/images/filler/gray.jpg" />
-        <img className={imgStyle} src="/images/filler/short.jpg" />
-        <img className={imgStyle} src="/images/filler/maid.jpg" /> */}
+        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
+        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
+        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
+        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
+        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
+        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
       </main>
     </>
   );

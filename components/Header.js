@@ -2,60 +2,43 @@ import Link from "next/link";
 import classNames from "classnames";
 
 function Header({ title }) {
-  const navStyle = "hover:bg-sky-100 px-4 rounded transition-all duration-500 whitespace-nowrap";
+  const navStyle = "hover:bg-sky-100 rounded transition-all duration-500";
 
   return (
+    // <div
+    //   className={classNames(
+    //     "flex bg-pink-200/50 w-[100vh] z-[1000] flex-col backdrop-blur",
+    //     "md:w-screen md:flex-row md:items-end md:justify-between"
+    //   )}
+    // >
     <>
-      <div
-        className={classNames(
-          "w-[100vh] bg-pink-200 relative z-[1000]",
-          "md:w-[300px] md:h-screen md:px-7 md:fixed"
-        )}
-      >
-        <header
-          className={classNames(
-            "flex px-9 pt-5 flex-row h-fit z-[1000]",
-            "md:pr-0 md:bg-transparent md:px-0"
-          )}
-        >
-          <a className={classNames("flex flex-row items-left", "md:flex-col")} href="/">
-            <img
-              className={classNames(
-                "max-w-10 w-40 mr-8 rounded p-2 border-4 border-pink-900/[.6]",
-                "md:w-50 md:mr-0"
-              )}
-              src="/images/profile.jpg"
-            />
-            <div className={classNames("mt-3 mb-3 flex flex-col xs:items-center", "md:items-left")}>
-              <h1
-                className={classNames(
-                  "text-8xl font-bold font-['Bebas_Neue'] mx-5 tracking-wider",
-                  "md:mx-0 md:text-left md:text-7xl"
-                )}
-              >
-                {title}
-              </h1>
-              <h2
-                className={classNames(
-                  "text-3xl whitespace-nowrap xs:items-center",
-                  "md:text-left md:text-2xl"
-                )}
-              >
-                Lottie Thorsen • Cosmetologist
-              </h2>
-            </div>
-          </a>
-        </header>
+      <header className={classNames("flex flex-row justify-center z-[1000] pt-2 pb-2 bg-white/50")}>
+        <a href="/" className={classNames("flex flex-row items-center")}>
+          <img
+            className={classNames("w-[100px] h-[100px] border-4 p-2 border-black rounded-sm")}
+            src="/images/profile.jpg"
+          />
+          <div className={classNames("mt-3 mb-3 flex flex-col items-center", "md:items-left")}>
+            <h1
+              className={classNames("text-7xl font-bold font-['Bebas_Neue'] mx-5 tracking-wider")}
+            >
+              {title}
+            </h1>
+            <h2 className={classNames("text-xl")}>Lottie Thorsen • Cosmetologist</h2>
+          </div>
+        </a>
+      </header>
+      <div className="w-full sticky justify-center top-0 flex flex-row z-[1000] bg-white/50">
         <nav
           className={classNames(
-            "text-4xl flex flex-row sticky top-0 leading-loose py-2 z-[1000] backdrop-blur justify-evenly",
-            "md:flex-col-reverse md:text-right md:bg-black/0 md:mt-12 "
+            "text-md flex flex-row w-full justify-evenly leading-loose backdrop-blur ",
+            "md:flex-row-reverse md:mb-2 md:mr-2 md:ml-auto"
           )}
         >
           <a href="/abouttheartist" className={navStyle}>
             About the Artist
           </a>
-          <p className="md:opacity-0">•</p>
+          <p className="">•</p>
           <a href="/hair" className={navStyle}>
             Hair
           </a>

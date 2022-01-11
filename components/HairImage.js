@@ -2,7 +2,7 @@ import Link from "next/link";
 import classNames from "classnames";
 
 function HairImage({ image, caption }) {
-  const imgStyle = "max-w-[600px] md:w-[300px]";
+  const imgStyle = "w-full md:w-[400px] border-4 rounded-sm border-black";
   const figCapStyle =
     "text-2xl absolute opacity-0 group-hover:opacity-100 absolute w-full text-center bg-lime-500/40 py-8 bottom-0 transition-all duration-200";
 
