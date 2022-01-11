@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 
-const imgStyle = "w-[400px] max-w-[80%] h-auto m-3";
+const imgStyle = " m-1";
 
 export default function Home() {
   return (
@@ -11,10 +10,20 @@ export default function Home() {
       </Head>
 
       {/* <!-- MAIN --> */}
-      <main className="flex flex-wrap justify-center flex-row items-center w-screen md:w-screen relative">
-        <img className={imgStyle} src="/images/filler/cursive.jpg" />
-        <img className={imgStyle} src="/images/filler/butterfly.jpg" />
-        <img className={imgStyle} src="/images/filler/candy.jpg" />
+      <main className="flex flex-wrap justify-center flex-row w-screen md:w-screen relative">
+        {/* <img className={imgStyle} className="h-[220px] m-2 " src="/images/y3.jpg" /> */}
+        <img
+          className={imgStyle}
+          className="h-[500px] md:h-[900px] m-2 md:border-[10px] border-4 rounded-sm border-black md:m-5"
+          src="/images/y1.jpg"
+        />
+        <img
+          className={imgStyle}
+          className="h-[200px] md:h-[600px] m-2 md:border-[10px] border-4 rounded-sm border-black md:m-5"
+          src="/images/y4.jpg"
+        />
+
+        {/* <img className={imgStyle} className="h-[160px] m-2" src="/images/y2.jpg" /> */}
       </main>
     </>
   );

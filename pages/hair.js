@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import HairImage from "../components/HairImage";
+import GalleryImage from "../components/GalleryImage";
 
 export default function Hair() {
   return (
@@ -11,18 +11,21 @@ export default function Hair() {
 
       {/* <!-- MAIN --> */}
       <main className="flex flex-wrap justify-center flex-row items-center w-screen relative z-[50]">
-        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
-        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
-        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
-        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
-        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
-        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
-        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
-        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
-        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
-        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
-        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
-        <HairImage image="/images/filler/buns.png" caption="two buns very cute" />
+        <GalleryImage image="/images/hair/hair12.png" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair5.jpg" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair13.jpg" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair14.jpg" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair15.jpg" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair1.jpg" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair2.jpg" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair3.jpg" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair7.jpg" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair10.jpg" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair11.jpg" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair4.jpg" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair6.jpg" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair8.jpg" caption="amazing hair!" />
+        <GalleryImage image="/images/hair/hair9.jpg" caption="amazing hair!" />
       </main>
     </>
   );

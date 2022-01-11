@@ -1,8 +1,10 @@
-import Link from "next/link";
 import classNames from "classnames";
+import { useState, useEffect } from "react";
 
 function Header({ title }) {
-  const navStyle = "hover:bg-sky-100 rounded transition-all duration-500";
+  const navStyle = "hover:bg-sky-100 px-3 md:px-5 md:py-2 rounded transition-all duration-500";
+
+  console.log("help");
 
   return (
     // <div
@@ -12,7 +14,7 @@ function Header({ title }) {
     //   )}
     // >
     <>
-      <header className={classNames("flex flex-row justify-center z-[1000] pt-2 pb-2 bg-white/50")}>
+      <header className={classNames("flex flex-row justify-center z-[1000] pt-2 pb-1 bg-white/70")}>
         <a href="/" className={classNames("flex flex-row items-center")}>
           <img
             className={classNames("w-[100px] h-[100px] border-4 p-2 border-black rounded-sm")}
@@ -28,11 +30,11 @@ function Header({ title }) {
           </div>
         </a>
       </header>
-      <div className="w-full sticky justify-center top-0 flex flex-row z-[1000] bg-white/50">
+      <div className="w-full sticky justify-center top-0 flex flex-row backdrop-blur z-[1000] bg-white/50">
         <nav
           className={classNames(
-            "text-md flex flex-row w-full justify-evenly leading-loose backdrop-blur ",
-            "md:flex-row-reverse md:mb-2 md:mr-2 md:ml-auto"
+            "text-md flex flex-row w-full justify-evenly leading-loose  text-xl",
+            "md:flex-row-reverse md:my-0 md:ml-auto md:text-2xl"
           )}
         >
           <a href="/abouttheartist" className={navStyle}>
