@@ -10,7 +10,7 @@ export default function sfx() {
       </Head>
 
       {/* <!-- MAIN --> */}
-      <main className="flex flex-wrap justify-center flex-row items-center w-screen relative z-[50] bg-gray-800">
+      <main className="flex flex-wrap justify-center flex-row items-center w-screen relative z-[50] py-6">
         <GalleryImage image="/images/sfx/1.jpg" caption="Knife Fight" />
         <GalleryImage image="/images/sfx/2.jpg" caption="Tectonic Plates" />
         <GalleryImage image="/images/sfx/3.jpg" caption="Force a Smile :/" />
