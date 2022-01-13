@@ -2,7 +2,7 @@ import Link from "next/link";
 import classNames from "classnames";
 
 function galleryImage({ image, caption }) {
-  const imgStyle = "w-full md:w-[400px] rounded-sm border-4 border-black md:border-[7px]";
+  const imgStyle = "w-full md:w-[600px] rounded-sm ";
   const figCapStyle =
     "text-5xl absolute opacity-0 group-hover:opacity-100 absolute w-full text-center bg-lime-500/40 backdrop-blur py-8 bottom-0 transition-all duration-500";
 

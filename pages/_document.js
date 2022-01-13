@@ -17,10 +17,20 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Bungee+Shade&family=Grenze+Gotisch:wght@500&family=Londrina+Outline&family=Monofett&family=Rampart+One&family=Righteous&family=Tourney:wght@300&display=swap"
             rel="stylesheet"
           ></link>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap"
+            rel="stylesheet"
+          />
+          <script src="../path/to/tw-elements/dist/js/index.min.js"></script>
+          <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+          />
         </Head>
         <body className="bg-pink-100">
           <Main />
           <NextScript />
+          <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
         </body>
       </Html>
     );

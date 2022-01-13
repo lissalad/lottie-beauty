@@ -6,7 +6,7 @@ function Header({ title }) {
   const width = useWindowWidth();
   console.log("master header!");
 
-  return width > 600 ? <DesktopHeader title={title} /> : <MobileHeader title={title} />;
+  return width > 840 ? <DesktopHeader title={title} /> : <MobileHeader title={title} />;
 }
 
 export default Header;
