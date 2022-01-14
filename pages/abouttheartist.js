@@ -29,7 +29,7 @@ export default function About() {
           <section className={classNames(sectionStyle, "")}>
             <img
               className={classNames("shadow-lg md:w-[400px] md:mx-auto md:rounded-md")}
-              src="/images/about/braidcrown1.jpg"
+              src="/images/about/braidcrown.jpg"
             />
             <div className="px-3 mx-auto my-2 md:px-8 text-center">
               <p className={classNames(textStyle, "")}>
