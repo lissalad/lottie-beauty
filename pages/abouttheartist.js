@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Carousel from "../components/Carousel";
-import classNames from "classNames";
+import classNames from "classnames";
 
 export default function About() {
   const captionStyle = "text-sm mt-1 mb-3 text-center text-gray-900 md:text-lg";
