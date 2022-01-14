@@ -21,7 +21,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap"
             rel="stylesheet"
           />
-          <script src="../path/to/tw-elements/dist/js/index.min.js"></script>
+          {/* <script src="../path/to/tw-elements/dist/js/index.min.js"></script> */}
           <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
