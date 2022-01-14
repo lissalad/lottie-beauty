@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Carousel from "../components/Carousel";
-import classNames from "classnames";
+import classNames from "classNames";
 
 export default function About() {
   const captionStyle = "text-sm mt-1 mb-3 text-center text-gray-900 md:text-lg";
@@ -60,7 +60,7 @@ export default function About() {
 
           {/* LEARNING SFX */}
           <section className={classNames(sectionStyle)}>
-            <img classname="md:mx-auto shadow-lg" src="/images/about/pooralice.jpg" />
+            <img className="md:mx-auto shadow-lg" src="/images/about/pooralice.jpg" />
             <p className={classNames(textStyle, "text-center md:px-20")}>
               In fourth grade Lottie discovered her interest for Makeup. She began learning on her
               own, with the help of Youtube tutorials.
@@ -78,8 +78,8 @@ export default function About() {
               />
             </a>
             <p className={classNames(textStyle, "px-12 mx-5 text-center md:px-4")}>
-              She finds inspiration for her work in many places. For school she keeps a "look book"
-              of inspiration, in the form of a Pinterest board. See what is inspiring Lottie today!
+              She finds inspiration for her work in many places. For school she keeps a look book of
+              inspiration, in the form of a Pinterest board. See what is inspiring Lottie today!
             </p>
           </section>
 
@@ -88,7 +88,7 @@ export default function About() {
             <div className="md:flex md:flex-row md:justify-between">
               <div className="md:mx-3">
                 <img className="shadow-lg" src="/images/about/lionking.jpeg" />
-                <p className={captionStyle}>Broadway's The Lion King</p>
+                <p className={captionStyle}>Broadway&apos;s The Lion King</p>
               </div>
               <div className="md:mx-3">
                 <img className="shadow-lg" src="/images/about/repogenetic.png" />
@@ -97,7 +97,7 @@ export default function About() {
             </div>
             <p className={classNames(textStyle, "md:mt-9")}>
               With a passion for working in the screen and stage industry, Lottie finds inspiration
-              in the movies and productions she sees. In Broadway's production of The Lion King,
+              in the movies and productions she sees. In the Broadway production of The Lion King,
               Lottie appreciated the bold use of color. In contrast, the makeup in the film Repo!
               The Genetic Opera (2008) impressed Lottie for its creepy yet beautifully mystical
               tone.

@@ -1,6 +1,3 @@
-import Link from "next/link";
-import classNames from "classnames";
-
 function galleryImage({ image, caption }) {
   const imgStyle = "w-full md:w-[600px] rounded-sm ";
   const figCapStyle =

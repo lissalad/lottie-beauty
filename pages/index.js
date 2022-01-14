@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Head from "next/head";
 
 const imgStyle = "";
@@ -18,8 +19,7 @@ export default function Home() {
           src="/images/y1.jpg"
         />
         <img
-          className={imgStyle}
-          className="h-[200px] md:h-[700px] rounded-sm m-4 shadow-xl"
+          className={classNames({ imgStyle }, "h-[200px] md:h-[700px] rounded-sm m-4 shadow-xl")}
           src="/images/y4.jpg"
         />
 
