@@ -27,6 +27,9 @@ export default function sfx() {
         <GalleryImage image="/images/sfx/14.jpg" caption="Stitches?" />
         <GalleryImage image="/images/sfx/15.jpg" caption="Pitchfork" />
         <GalleryImage image="/images/sfx/16.jpg" caption="Snacky" />
+        <GalleryImage image="/images/sfx/hole.jpg" caption="Hole" />
+        <GalleryImage image="/images/sfx/holes.jpg" caption="Hole" />
+        <GalleryImage image="/images/sfx/cronch.jpg" caption="Cronch" />
       </main>
     </>
   );

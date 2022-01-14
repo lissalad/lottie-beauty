@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 export default function About() {
   const captionStyle = "text-sm mt-1 mb-3 text-center text-gray-900 md:text-lg";
-  const hairGallery = "shadow-lg";
+  const hairGallery = "shadow-lg md:rounded-md md:w-[200px] md:m-3";
   const textStyle = classNames(
     "indent-5 text-md leading-normal md:leading-loose mt-2",
     "md:text-xl md:px-12 md:font-bold md:mt-4"
@@ -17,7 +17,7 @@ export default function About() {
         <title>Prettie • About</title>
       </Head>
       <main className={classNames("mx-3", "md:flex md:flex-col md:items-center text-red-900")}>
-        <div className="md:max-w-5xl bg-sky-200/30 px-4 md:px-48">
+        <div className="md:max-w-5xl bg-sky-200/0 px-4 md:px-48">
           <div className="flex flex-col items-center">
             <h1 className="text-center text-4xl mt-6 font-['Libre_Baskerville'] italic">
               About the Artist
@@ -27,7 +27,10 @@ export default function About() {
 
           {/* COVER */}
           <section className={classNames(sectionStyle, "")}>
-            <img className={classNames("shadow-lg md:w-[600px] md:mx-auto")} src="/images/y3.png" />
+            <img
+              className={classNames("shadow-lg md:w-[400px] md:mx-auto md:rounded-md")}
+              src="/images/about/braidcrown1.jpg"
+            />
             <div className="px-3 mx-auto my-2 md:px-8 text-center">
               <p className={classNames(textStyle, "")}>
                 Meet Lottie Thorsen, artist of makeup and hair. Lottie is currently in school
@@ -41,11 +44,11 @@ export default function About() {
 
           {/* HER OWN HAIR */}
           <section className={classNames(sectionStyle, "")}>
-            <div className="">
-              <img className={hairGallery} src="/images/y4.png" />
-              <img className={hairGallery} src="/images/y4.png" />
-              <img className={hairGallery} src="/images/y4.png" />
-              <img className={hairGallery} src="/images/y4.png" />
+            <div className="md:flex md:flex-row md:flex-wrap md:justify-center">
+              <img className={hairGallery} src="/images/about/purp.png" />
+              <img className={hairGallery} src="/images/about/y2.png" />
+              <img className={hairGallery} src="/images/about/blue.png" />
+              <img className={hairGallery} src="/images/about/pinkpurp.png" />
             </div>
             <div>
               <p className={classNames(textStyle, "p-2")}>
@@ -59,7 +62,7 @@ export default function About() {
 
           {/* LEARNING SFX */}
           <section className={classNames(sectionStyle)}>
-            <img className="md:mx-auto shadow-lg" src="/images/about/pooralice.jpg" />
+            <img className="md:mx-auto shadow-lg md:rounded-md" src="/images/about/pooralice.jpg" />
             <p className={classNames(textStyle, "text-center md:px-20")}>
               In fourth grade Lottie discovered her interest for Makeup. She began learning on her
               own, with the help of Youtube tutorials.
@@ -86,34 +89,33 @@ export default function About() {
           <section className={classNames(sectionStyle, "md:flex md:flex-col")}>
             <div className="md:flex md:flex-row md:justify-between">
               <div className="md:mx-3">
-                <img className="shadow-lg" src="/images/about/lionking.jpeg" />
+                <img className="shadow-lg md:rounded-md" src="/images/about/lionking.jpeg" />
                 <p className={captionStyle}>Broadway&apos;s The Lion King</p>
               </div>
               <div className="md:mx-3">
-                <img className="shadow-lg" src="/images/about/repogenetic.png" />
+                <img className="shadow-lg md:rounded-md" src="/images/about/repogenetic.png" />
                 <p className={captionStyle}>Repo! The Genetic Opera (2008)</p>
               </div>
             </div>
-            <p className={classNames(textStyle, "md:mt-9")}>
+            <p className={classNames(textStyle, "md:mt-2")}>
               With a passion for working in the screen and stage industry, Lottie finds inspiration
               in the movies and productions she sees. In the Broadway production of The Lion King,
-              Lottie appreciated the bold use of color. In contrast, the makeup in the film Repo!
-              The Genetic Opera (2008) impressed Lottie for its creepy yet beautifully mystical
-              tone.
+              Lottie appreciated the bold creative creative. In contrast, the makeup in the film
+              Repo! The Genetic Opera (2008) impressed Lottie for its harsh dramatic look. tone.
             </p>
           </section>
 
           {/* GOODBYE */}
           <section className="">
-            <img className="shadow-lg" src="/images/y4.png" />
+            <img className="shadow-lg md:rounded-md" src="/images/y4.png" />
             <div className="pb-4">
               <p className={classNames(textStyle, "")}>
                 With the threat of Covid, SFIEC has been holding online classes for the majority of
                 the year. From her home, Lottie practices on the hair of model dolls. She looks
                 forward to returning back to school in person to train and collaborate with her
                 fellow creative minded peers. In May, she will graduate from the program and begin
-                her career as makeup artist and hair styling. Follow her Instagram to stay up to
-                date on her work.
+                her career as makeup artist and hairstylist. Follow her Instagram to stay up to date
+                on her work.
               </p>
               <div
                 className={classNames(
