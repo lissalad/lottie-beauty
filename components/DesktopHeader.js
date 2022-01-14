@@ -2,7 +2,7 @@ import classNames from "classnames";
 
 function DesktopHeader({ title }) {
   const navStyle =
-    "hover:bg-pink-300/40 px-7 whitespace-nowrap flex items-center transition-all duration-300 text-4xl p-6 hover:text-5xl ";
+    "hover:bg-pink-300/40 whitespace-nowrap flex items-center transition-all duration-300 text-2xl p-3 hover:text-3xl ";
   console.log("desktop header");
 
   // londrina outline for handwritten outline
@@ -18,14 +18,14 @@ function DesktopHeader({ title }) {
           <div className={classNames("flex flex-row items-center self-center my-2")}>
             <h1
               className={classNames(
-                "text-[120px] font-bold font-['monofett'] leading-[100px] mb-4 mr-12 hover:text-[130px] transition-all duration-200"
+                "text-[100px] font-bold font-['monofett'] leading-[100px] mb-4 mr-12 hover:text-[130px] transition-all duration-200"
               )}
             >
               {title}
             </h1>
             <div
               className={classNames(
-                "flex flex-row whitespace-wrap flex-wrap text-[1.9rem] w-fit tracking-widest"
+                "flex flex-row whitespace-wrap flex-wrap text-2xl w-fit tracking-widest"
               )}
             >
               <div className="whitespace-nowrap flex flex-row justify-left">

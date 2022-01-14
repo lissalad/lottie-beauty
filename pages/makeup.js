@@ -10,7 +10,7 @@ export default function Hair() {
       </Head>
 
       {/* <!-- MAIN --> */}
-      <main className="flex flex-wrap justify-center flex-row items-center w-screen relative z-[50] my-6"></main>
+      <main className="flex flex-wrap justify-center flex-row items-center w-screen relative z-[50] md:mt-3 mb-6"></main>
     </>
   );
 }
