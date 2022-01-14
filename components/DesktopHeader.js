@@ -13,28 +13,23 @@ function DesktopHeader({ title }) {
   // bungee outline also gamer but all caps
 
   return (
-    <div className="flex flex-row justify-between items-center shadow-lg top-0 sticky z-[1000] px-12 bg-rose-800/70 backdrop-blur-lg flex-wrap text-slate-200 ">
+    <div className="flex flex-row justify-between items-center shadow-lg top-0 sticky z-[1000] px-12 md:px-5 bg-rose-800/70 backdrop-blur-lg flex-wrap text-slate-200 ">
       <div className="flex flex-wrap whitespace-wrap">
         <Link passHref href="/">
           <a className={classNames("flex flex-row items-center")}>
-            <div className={classNames("flex flex-row items-center self-center my-2")}>
+            <div className={classNames("flex flex-row items-center self-center mb-2")}>
               <h1
                 className={classNames(
-                  "text-[100px] font-bold font-['monofett'] leading-[100px] mb-4 mr-12 hover:text-[110px] transition-all duration-200"
+                  "text-[70px] font-bold font-['monofett'] leading-[100px] mx-4 hover:text-[90px] transition-all duration-200"
                 )}
               >
                 {title}
               </h1>
-              <div
-                className={classNames(
-                  "flex flex-row whitespace-wrap flex-wrap text-2xl w-fit tracking-widest"
-                )}
-              >
-                <div className="whitespace-nowrap flex flex-row justify-left">
-                  <h2>Lottie Thorsen</h2>
-                  <p className="mx-4"> • </p>
-                </div>
-                <h2> Cosmetologist</h2>
+
+              <div className="flex flex-col leading-relaxed justify-left items-center text-lg ">
+                <h2 className="text-xl mt-3">Lottie Thorsen</h2>
+                {/* <p className="mx-4 md:-my-1"> • </p> */}
+                <h2 className="italic"> Cosmetologist</h2>
               </div>
             </div>
           </a>

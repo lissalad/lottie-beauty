@@ -59,7 +59,7 @@ export default function About() {
 
           {/* LEARNING SFX */}
           <section className={classNames(sectionStyle)}>
-            <img className="md:mx-auto shadow-lg" src="/images/about/pooralice.png" />
+            <img className="md:mx-auto shadow-lg" src="/images/about/pooralice.jpg" />
             <p className={classNames(textStyle, "text-center md:px-20")}>
               In fourth grade Lottie discovered her interest for Makeup. She began learning on her
               own, with the help of Youtube tutorials.
