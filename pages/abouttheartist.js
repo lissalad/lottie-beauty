@@ -27,7 +27,7 @@ export default function About() {
 
           {/* COVER */}
           <section className={classNames(sectionStyle, "")}>
-            <img className={classNames("shadow-lg md:w-[600px] md:mx-auto")} src="/images/y3.jpg" />
+            <img className={classNames("shadow-lg md:w-[600px] md:mx-auto")} src="/images/y3.png" />
             <div className="px-3 mx-auto my-2 md:px-8 text-center">
               <p className={classNames(textStyle, "")}>
                 Meet Lottie Thorsen, artist of makeup and hair. Lottie is currently in school
@@ -42,10 +42,10 @@ export default function About() {
           {/* HER OWN HAIR */}
           <section className={classNames(sectionStyle, "")}>
             <div className="">
-              <img className={hairGallery} src="/images/y4.jpg" />
-              <img className={hairGallery} src="/images/y4.jpg" />
-              <img className={hairGallery} src="/images/y4.jpg" />
-              <img className={hairGallery} src="/images/y4.jpg" />
+              <img className={hairGallery} src="/images/y4.png" />
+              <img className={hairGallery} src="/images/y4.png" />
+              <img className={hairGallery} src="/images/y4.png" />
+              <img className={hairGallery} src="/images/y4.png" />
             </div>
             <div>
               <p className={classNames(textStyle, "p-2")}>
@@ -59,7 +59,7 @@ export default function About() {
 
           {/* LEARNING SFX */}
           <section className={classNames(sectionStyle)}>
-            <img className="md:mx-auto shadow-lg" src="/images/about/pooralice.jpg" />
+            <img className="md:mx-auto shadow-lg" src="/images/about/pooralice.png" />
             <p className={classNames(textStyle, "text-center md:px-20")}>
               In fourth grade Lottie discovered her interest for Makeup. She began learning on her
               own, with the help of Youtube tutorials.
@@ -105,7 +105,7 @@ export default function About() {
 
           {/* GOODBYE */}
           <section className="">
-            <img className="shadow-lg" src="/images/y4.jpg" />
+            <img className="shadow-lg" src="/images/y4.png" />
             <div className="pb-4">
               <p className={classNames(textStyle, "")}>
                 With the threat of Covid, SFIEC has been holding online classes for the majority of

@@ -20,7 +20,7 @@ function DesktopHeader({ title }) {
             <div className={classNames("flex flex-row items-center self-center my-2")}>
               <h1
                 className={classNames(
-                  "text-[100px] font-bold font-['monofett'] leading-[100px] mb-4 mr-12 hover:text-[130px] transition-all duration-200"
+                  "text-[100px] font-bold font-['monofett'] leading-[100px] mb-4 mr-12 hover:text-[110px] transition-all duration-200"
                 )}
               >
                 {title}
